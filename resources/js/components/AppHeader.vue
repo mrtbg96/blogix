@@ -18,7 +18,16 @@ import UserMenuContent from '@/components/UserMenuContent.vue';
 import { getInitials } from '@/composables/useInitials';
 import type { BreadcrumbItem, NavItem } from '@/types';
 import { Link, usePage } from '@inertiajs/vue3';
-import { LayoutGrid, Menu } from 'lucide-vue-next';
+import {
+    LayoutGrid,
+    Menu,
+    IdCard,
+    Users,
+    Shapes,
+    Tag,
+    NotebookText,
+    MessageSquareMore,
+} from 'lucide-vue-next';
 import { computed } from 'vue';
 
 interface Props {
@@ -43,6 +52,36 @@ const mainNavItems: NavItem[] = [
         title: 'Dashboard',
         href: '/dashboard',
         icon: LayoutGrid,
+    },
+    {
+        title: 'Roles',
+        href: '/roles',
+        icon: IdCard,
+    },
+    {
+        title: 'Users',
+        href: '/users',
+        icon: Users,
+    },
+    {
+        title: 'Categories',
+        href: '/categories',
+        icon: Shapes,
+    },
+    {
+        title: 'Tags',
+        href: '/tags',
+        icon: Tag,
+    },
+    {
+        title: 'Posts',
+        href: '/posts',
+        icon: NotebookText,
+    },
+    {
+        title: 'Comments',
+        href: '/comments',
+        icon: MessageSquareMore,
     },
 ];
 
